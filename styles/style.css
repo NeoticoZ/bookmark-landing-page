@@ -41,8 +41,13 @@ button {
 /* ====== BASE ==================== */
 body {
   font-size: 16px;
-  font-family: 'Rubik', sans-serif;
   color: var(--grayish-blue);
+}
+
+body,
+button,
+input {
+  font-family: 'Rubik', sans-serif;
 }
 
 a {
@@ -297,5 +302,64 @@ header nav {
   margin-bottom: 1.5rem;
   width: 80%;
   display: inline-flex;
+  justify-content: center;
+}
+
+/* ====== FAQ ==================== */
+.faq {
+  margin-bottom: 8rem;
+}
+
+.faq header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.faq header h2 {
+  margin-bottom: 1rem;
+}
+
+.faq .accordion {
+  margin-bottom: 3rem;
+}
+
+.faq .accordion .question {
+  border-bottom: 1px solid #d7dadf;
+}
+
+.faq .accordion button {
+  /* font-size: 1rem; */
+  font-size: 15px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+  color: var(--very-dark-blue);
+  /* font-weight: 500; */
+}
+
+.faq .accordion button img {
+  width: 18px;
+  height: 12px;
+}
+
+.faq .accordion .panel {
+  margin: 1rem 0 2rem;
+
+  display: none;
+}
+
+.faq-button {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-button .button {
+  width: 120px;
+  display: flex;
   justify-content: center;
 }
