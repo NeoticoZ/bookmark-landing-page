@@ -18,7 +18,8 @@ img {
   height: auto;
 }
 
-button {
+button,
+input {
   background: none;
   border: none;
   outline: none;
@@ -88,6 +89,10 @@ p {
   line-height: 1.8rem;
 }
 
+.logo {
+  width: 148px;
+  height: 25px;
+}
 /* ====== NAVIGATION ==================== */
 header {
   margin-bottom: 2rem;
@@ -362,4 +367,105 @@ header nav {
   width: 120px;
   display: flex;
   justify-content: center;
+}
+
+/* ====== CALL TO ACTION ==================== */
+.call-to-action {
+  background: var(--soft-blue);
+  text-align: center;
+  padding: 3.5rem 0;
+}
+
+.call-to-action h2 {
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.call-to-action span {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.call-to-action h2,
+.call-to-action span,
+.call-to-action button {
+  color: white;
+}
+
+.call-to-action form {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action form label.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.call-to-action form input {
+  height: 3rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+
+  border-radius: 6px;
+
+  background: white;
+}
+
+.call-to-action form input::placeholder {
+  opacity: 0.4;
+}
+
+.call-to-action form button {
+  border-radius: 6px;
+  box-shadow: 0px 6px 8px rgba(36, 37, 43, 0.15);
+  background: var(--soft-red);
+  height: 3rem;
+}
+
+/* ====== FOOTER ==================== */
+footer {
+  text-align: center;
+  background: var(--very-dark-blue);
+  padding: 2.5rem 0;
+}
+
+footer .links .logo {
+  margin-bottom: 2rem;
+}
+
+footer .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .links ul a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #e7e7e7;
+}
+
+footer .social {
+  margin-top: 3rem;
+
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+footer .social img {
+  width: 24px;
+  height: 24px;
 }
